@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /*-------- NAVABAR--------- */
+        nav{
+            background-color: rgb(70, 70, 168);
+            display: flex;
+            padding: 25px;
+        }
+        h1{
+            width: 50%;
+            color: aliceblue;
+        }
+        .navritt{
+            width: 50%;
+        }
+        .navritt input{
+             padding: 5px;
+             border-radius: 6px;
+         }
+         .navritt button{
+             padding: 5px;
+             background-color: rgb(133, 87, 177);
+             border-radius: 6px;
+         }
+         .navritt button:hover{
+             background-color: rgb(91, 161, 138);
+             color: aliceblue;
+         }
+
+         /*----------- BODY-------------- */
+         
+         .container{
+             display: flex;
+             padding: 30px;
+             background-color: rgb(169, 187, 228);
+             
+         }
+         .cont1{
+             width: 50%;
+             height: 700px;
+             padding: 10px;
+         }
+        .cont1 h2{
+             padding-bottom: 25px;
+         }
+         .cont1 p{
+             padding-bottom: 40px;
+         }
+
+         .cont2{
+             width: 50%;
+             height: 700px;
+             display: flex;
+             flex-direction: column;
+             padding: 10px;
+             justify-content: space-around;
+            
+             }
+             #fname{
+                 width: 200px;
+             }
+             #lname{
+                 width: 200px;
+             }
+             #DOB{
+                 width: 200px;
+             }
+             #male{
+                 width: 50px;
+             }
+             #female{
+                 width: 50px;
+             }
+             .cont2 input{
+                 padding: 10px;
+                 width: 400px;
+                 border-radius: 6px;
+             }
+             .cont2 button{
+                 width: 400px;
+                 padding: 10px;
+                background-color: rgb(92, 236, 92);
+                border-radius: 6px;
+             }
+             #btn{
+                 width: 200px;
+             }
+             .cont2 button:hover{
+                 background-color: rgb(7, 66, 7);
+                 color: aliceblue;
+             }
+             .lastline a{
+                 text-decoration: none;
+             }
+             footer ul{
+                 list-style: none;
+                 padding: 14px;
+             }
+             footer a{
+                 text-decoration: none;
+                 padding: 8px;
+                 color:black;
+             }
+             .first{
+                 display: flex;
+                 justify-content: center;
+                 
+             }
+             .second{
+                 display: flex;
+                 justify-content: center;
+             }
+             .third{
+                 display: flex;
+                 justify-content: center;
+             }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Facebook</h1>
+            <div class="navritt">
+                <input type="email" placeholder="username or email" />
+                <input type="password" placeholder="password" />
+                <button type="submit">Log in</button>
+            </div>
+            <!-- <a href="#">forgot account?</a> -->
+        </nav>
+    </header>
+    <div class="container">
+        <div class="cont1">
+            <h2>Connect with the friends and the world around you on facebook.</h2>
+            <p>See photo and update from friendsin feed.</p>
+            <p>Share what's new in your life on your Timeline</p>
+            <p>Find more of what you're looking for with tha facebook search</p>
+        </div>
+        <div class="cont2">
+            <h2>Sign Up</h2>
+            <p style="font-weight: bold"> It's and always will you</p>
+            <div class="myRoll">
+                <input type="text" placeholder="First name" id="fname">
+                <input type="text" placeholder="Last name" id="lname">
+            </div>
+            <input type="email" placeholder="Enter your email">
+            <input type="text" placeholder="New password">
+            <div> <input type="date" id="DOB"></div>
+               
+            
+            <div> Male <input type="radio" name="myGender" id="male"> Female <input type="radio" name="myGender" id="female">
+                
+            </div>
+            <p>By cheking create accountyou agree to our Terms and that you have have read our Data policyincluding our Cookie use You may receve SMS Notification from facabook and can opt out at any time. </p>
+            <button type="submit" id="btn">Create Account</button>
+            <div class="lastline">
+                <a  style="font-weight: bold" href="#"> Create a Page</a>for a Celebrites,band or business
+            </div>
+        </div>
+    </div>
+    <!-- <div>
+        <label for="month"></label>
+        <select name="month">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3 </option>
+            <option value="4">4</option>
+           
+        </select>
+    </div> -->
+    <footer>
+        <ul class="first">
+            <li><a href="#">Sign Up</a></li>
+            <li><a href="#">Log in</a></li>
+            <li><a href="#">Messenger</a></li>
+            <li><a href="#">DotnetTec</a></li>
+            <li><a href="#">Mobile</a></li>
+            <li><a href="#">Find friends</a></li>
+            <li><a href="#">Badges</a></li>
+            <li><a href="#">People</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Place</a></li>
+            <li><a href="#">Games</a></li>
+        </ul>
+        <ul class="second">
+            <li><a href="#">Location</a></li>
+            <li><a href="#">Celebrites</a>
+            <li><a href="#">Group</a></li>
+            <li><a href="#">Moment</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">Create advert</a></li>
+            <li><a href="#">Create Page</a></li>
+            <li><a href="#">Develops</a></li>
+            <li><a href="#">Carrers</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Cookies</a></li>
+            </ul>
+            <ul class="third">
+                <li><a href="#">Ads</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Helps</a></li>
+            </ul>
+    </footer>
+</body>
+</html>
